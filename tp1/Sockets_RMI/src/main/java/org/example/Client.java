@@ -23,15 +23,13 @@ public class Client {
         }
         System.out.println("Connection successful to the server:"+client.getRemoteSocketAddress());
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-        String userInput;
+        String res;
 
         do {
-            System.out.print("Client: ");
-            userInput = stdin.readLine();
-            output.println(userInput);
-            String res = input.readLine();
+            res = input.readLine();
             System.out.println("Server: " + res);
-        } while(userInput != "");
+        } while(res != null);
+
         stdin.close();
         output.close();
         input.close();
