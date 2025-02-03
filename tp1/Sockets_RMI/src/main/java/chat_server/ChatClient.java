@@ -14,6 +14,10 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
         this.gui = new ChatClientGUI();
     }
 
+    public String getPseudo() {
+        return pseudo;
+    }
+
     @Override
     public void diffuseMessage(Message m) throws RemoteException {
         System.out.println(m.getPseudo() + ": " + m.getMessage());
