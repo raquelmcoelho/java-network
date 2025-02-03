@@ -1,4 +1,4 @@
-package org.example.chat_serveur;
+package chat_server;
 import java.io.Serializable;
 
 public class Message implements Serializable

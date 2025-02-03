@@ -1,17 +1,16 @@
-package org.example.chat_serveur;
+package chat_server;
 import java.rmi.*;
-import java.rmi.registry.LocateRegistry;
 import java.rmi.server.*;
 import java.util.Scanner;
 
 public class ChatClient extends UnicastRemoteObject implements InterfaceChatClient {
     private String pseudo;
-    private InterfaceChatServeur serveur;
+    private InterfaceChatServer server;
     public ChatClientGUI gui;
 
-    public ChatClient(String pseudo, InterfaceChatServeur serveur) throws RemoteException {
+    public ChatClient(String pseudo, InterfaceChatServer server) throws RemoteException {
         this.pseudo = pseudo;
-        this.serveur = serveur;
+        this.server = server;
         this.gui = new ChatClientGUI();
     }
 
@@ -22,7 +21,7 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
     }
 
     public void sendMessage(String message) throws RemoteException {
-        serveur.broadcastMessage(new Message(pseudo, message));
+        server.broadcastMessage(new Message(pseudo, message));
     }
 
     public static void main(String[] args) {
@@ -31,10 +30,10 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
             System.out.print("Insert your pseudo: ");
             String pseudo = scanner.nextLine();
 
-            InterfaceChatServeur serveur = (InterfaceChatServeur) Naming.lookup("rmi://localhost/ChatServeur");
-            ChatClient client = new ChatClient(pseudo, serveur);
+            InterfaceChatServer server = (InterfaceChatServer) Naming.lookup("rmi://localhost/ChatServer");
+            ChatClient client = new ChatClient(pseudo, server);
             Naming.rebind("rmi://localhost/" + pseudo, client);
-            serveur.connect(pseudo, "rmi://localhost/" + pseudo);
+            server.connect(pseudo, "rmi://localhost/" + pseudo);
 
             client.gui.launchUI(client);
         } catch (Exception e) {

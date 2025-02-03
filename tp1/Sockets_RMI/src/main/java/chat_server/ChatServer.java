@@ -1,13 +1,13 @@
-package org.example.chat_serveur;
+package chat_server;
 import java.rmi.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.server.*;
 import java.util.*;
 
-public class ChatServeur extends UnicastRemoteObject implements InterfaceChatServeur {
+public class ChatServer extends UnicastRemoteObject implements InterfaceChatServer {
     private Map<String, InterfaceChatClient> clients = new HashMap<>();
 
-    public ChatServeur() throws RemoteException {
+    public ChatServer() throws RemoteException {
         super();
     }
 
@@ -38,10 +38,10 @@ public class ChatServeur extends UnicastRemoteObject implements InterfaceChatSer
     public static void main(String[] args) {
         try {
             LocateRegistry.createRegistry(1099);
-            HeureServeur heure_server = new HeureServeur();
-            ChatServeur chat_server = new ChatServeur();
-            Naming.rebind("rmi://localhost/ChatServeur", chat_server);
-            Naming.rebind("rmi://localhost/HeureServeur", heure_server);
+            TimeServer time_server = new TimeServer();
+            ChatServer chat_server = new ChatServer();
+            Naming.rebind("rmi://localhost/ChatServer", chat_server);
+            Naming.rebind("rmi://localhost/TimeServer", time_server);
             System.out.println("Chat and Time Server Online...");
         } catch (Exception e) {
             e.printStackTrace();

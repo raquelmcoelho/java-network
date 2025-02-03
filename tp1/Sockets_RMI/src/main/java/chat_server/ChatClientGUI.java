@@ -1,4 +1,4 @@
-package org.example.chat_serveur;
+package chat_server;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

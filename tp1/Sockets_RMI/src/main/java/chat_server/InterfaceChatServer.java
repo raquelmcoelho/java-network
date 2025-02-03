@@ -1,25 +1,25 @@
-package org.example.chat_serveur;
+package chat_server;
 import java.rmi.* ;
 
-public interface InterfaceChatServeur extends Remote
+public interface InterfaceChatServer extends Remote
 {
-    /** Connexion sur le serveur
-     * @param pseudo            pseudo choisi
-     * @param url               url sur l'objet client distant
+    /** Connection at the server
+     * @param pseudo            pseudo chosen
+     * @param url               url of the remote client
      * @throws RemoteException
      */
     public void connect (String pseudo,String url) throws RemoteException ;
 
     /**
      *
-     * @param pseudo            pseudo qui se deconnecte
+     * @param pseudo            pseudo which is going to be disconnected
      * @throws RemoteException
      */
     public void disconnect (String pseudo) throws RemoteException ;
 
     /**
      *
-     * @param msg Message diffuse a tous les utilisateurs
+     * @param msg               broadcasted message
      * @throws RemoteException
      */
     public void broadcastMessage (Message msg) throws RemoteException ;
