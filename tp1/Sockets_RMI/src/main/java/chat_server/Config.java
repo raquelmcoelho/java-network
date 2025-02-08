@@ -1,5 +1,6 @@
 package chat_server;
 import java.net.*;
+import java.util.Enumeration;
 
 public class Config {
     public static String IP_SERVER = null;
@@ -10,11 +11,21 @@ public class Config {
 
     private static String getLocalIP() {
         try {
-            return InetAddress.getLocalHost().getHostAddress();
+            Enumeration<NetworkInterface> networkInterfaces = NetworkInterface.getNetworkInterfaces();
+            while (networkInterfaces.hasMoreElements()) {
+                NetworkInterface netIf = networkInterfaces.nextElement();
+                Enumeration<InetAddress> addresses = netIf.getInetAddresses();
+                while (addresses.hasMoreElements()) {
+                    InetAddress addr = addresses.nextElement();
+                    if (!addr.isLoopbackAddress() && addr instanceof Inet4Address) {
+                        return addr.getHostAddress();
+                    }
+                }
+            }
         } catch (Exception e) {
-            System.err.println("Could not get local IP address.");
-            return "127.0.0.1"; // Fallback para localhost
+            e.printStackTrace();
         }
+        return "127.0.0.1"; // Fallback
     }
 
     private static String getRMIServer() {

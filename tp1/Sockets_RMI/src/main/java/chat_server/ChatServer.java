@@ -36,7 +36,7 @@ public class ChatServer extends UnicastRemoteObject implements InterfaceChatServ
     }
 
     public static void main(String[] args) {
-        System.out.println("Starting ChatServer...");
+        System.out.println("Starting Chat and Time Server at " + Config.LOCAL_IP +  "...");
 
         try {
             LocateRegistry.createRegistry(Config.PORT);
@@ -52,7 +52,6 @@ public class ChatServer extends UnicastRemoteObject implements InterfaceChatServ
             ChatServer chat_server = new ChatServer();
             Naming.rebind(Config.getChatServer(), chat_server);
             Naming.rebind(Config.getTimeServer(), time_server);
-            System.out.println("Chat and Time Server Online...");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -19,6 +19,16 @@ public class ChatClientGUI extends JFrame {
 
     public ChatClientGUI() {}
 
+    private void onClose() {
+        System.out.println("Disconnecting client...");
+
+        try {
+            backend.disconnect();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public void configureGUI(ChatClient backend) {
         this.backend = backend;
 
@@ -26,6 +36,14 @@ public class ChatClientGUI extends JFrame {
         setSize(700, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
+
+        this.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                onClose();
+            }
+        });
+
 
         // Top panel (pseudo + times)
         JPanel topPanel = new JPanel(new GridLayout(1, 4, 10, 10));

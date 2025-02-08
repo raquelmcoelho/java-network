@@ -29,6 +29,10 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
         server.broadcastMessage(new Message(pseudo, message));
     }
 
+    public void disconnect() throws RemoteException {
+        server.disconnect(this.pseudo);
+    }
+
     public static void main(String[] args) {
         System.out.println("Starting ChatClient...");
         try {
