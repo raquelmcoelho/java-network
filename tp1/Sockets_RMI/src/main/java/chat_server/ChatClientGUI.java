@@ -98,7 +98,7 @@ public class ChatClientGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    InterfaceTimeServer server = (InterfaceTimeServer) Naming.lookup(Config.TIME_SERVER);
+                    InterfaceTimeServer server = (InterfaceTimeServer) Naming.lookup(Config.getTimeServer());
                     String serverTime = server.getTime();
                     SwingUtilities.invokeLater(() -> updateTime(formatTime(new Date()), serverTime));
                 } catch (Exception exc) {

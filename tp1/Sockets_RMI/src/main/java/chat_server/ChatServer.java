@@ -45,12 +45,13 @@ public class ChatServer extends UnicastRemoteObject implements InterfaceChatServ
         }
 
         try {
+            Config.IP_SERVER = Config.LOCAL_IP;
             System.setProperty("java.rmi.server.hostname", Config.IP_SERVER);
             System.setProperty("sun.rmi.transport.connectionTimeout", "60000");
             TimeServer time_server = new TimeServer();
             ChatServer chat_server = new ChatServer();
-            Naming.rebind(Config.CHAT_SERVER, chat_server);
-            Naming.rebind(Config.TIME_SERVER, time_server);
+            Naming.rebind(Config.getChatServer(), chat_server);
+            Naming.rebind(Config.getTimeServer(), time_server);
             System.out.println("Chat and Time Server Online...");
         } catch (Exception e) {
             e.printStackTrace();

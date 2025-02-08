@@ -30,6 +30,7 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
     }
 
     public static void main(String[] args) {
+        System.out.println("Starting ChatClient...");
         try {
             LocateRegistry.createRegistry(Config.PORT);
         } catch (RemoteException e) {
@@ -38,11 +39,18 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
 
         try {
             System.setProperty("sun.rmi.transport.connectionTimeout", "60000");
+
             Scanner scanner = new Scanner(System.in);
+
+            if(Config.IP_SERVER == null) {
+                System.out.print("Insert your server IP: ");
+                Config.IP_SERVER = scanner.nextLine();
+            }
+
             System.out.print("Insert your pseudo: ");
             String pseudo = scanner.nextLine();
 
-            InterfaceChatServer server = (InterfaceChatServer) Naming.lookup(Config.CHAT_SERVER);
+            InterfaceChatServer server = (InterfaceChatServer) Naming.lookup(Config.getChatServer());
             ChatClient client = new ChatClient(pseudo, server);
             Naming.rebind(Config.RMI_CLIENT + pseudo, client);
             server.connect(pseudo, Config.RMI_CLIENT + pseudo);
