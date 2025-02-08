@@ -48,7 +48,7 @@ public class ChatClientGUI extends JFrame {
         // Top panel (pseudo + times)
         JPanel topPanel = new JPanel(new GridLayout(1, 4, 10, 10));
         topPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        topPanel.setBackground(new Color(230, 230, 250)); // Lavanda
+        topPanel.setBackground(new Color(255, 196, 240));
 
         pseudoField = new JTextField(10);
         pseudoField.setText(backend.getPseudo());
@@ -60,7 +60,7 @@ public class ChatClientGUI extends JFrame {
 
         serverTimeLabel = new JLabel("Server Time: --:--:--");
         serverTimeLabel.setFont(new Font("SansSerif", Font.BOLD, 12));
-        serverTimeLabel.setForeground(new Color(50, 50, 150));
+        serverTimeLabel.setForeground(new Color(209, 23, 161));
 
         topPanel.add(new JLabel("Pseudo:"));
         topPanel.add(pseudoField);
@@ -93,7 +93,7 @@ public class ChatClientGUI extends JFrame {
 
         sendButton = new JButton("Send");
         sendButton.setFont(new Font("SansSerif", Font.BOLD, 14));
-        sendButton.setBackground(new Color(50, 150, 50)); // Verde escuro
+        sendButton.setBackground(new Color(209, 23, 161));
         sendButton.setForeground(Color.WHITE);
         sendButton.setFocusPainted(false);
         sendButton.setBorder(BorderFactory.createEmptyBorder(8, 15, 8, 15));
