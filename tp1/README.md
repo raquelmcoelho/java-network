@@ -29,7 +29,7 @@ Name the directory to be listed:
 
 ## 💬 Chat RMI Server
 
-[chat](image.png)
+![chat](image.png)
 
 ### 🔹 1️⃣ Compile the Code
 To compile the java files:
