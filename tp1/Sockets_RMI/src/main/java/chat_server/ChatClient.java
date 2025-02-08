@@ -37,7 +37,7 @@ public class ChatClient extends UnicastRemoteObject implements InterfaceChatClie
         }
 
         try {
-            System.setProperty("java.rmi.server.hostname", Config.IP_SERVER);
+            System.setProperty("sun.rmi.transport.connectionTimeout", "60000");
             Scanner scanner = new Scanner(System.in);
             System.out.print("Insert your pseudo: ");
             String pseudo = scanner.nextLine();

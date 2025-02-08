@@ -36,6 +36,8 @@ public class ChatServer extends UnicastRemoteObject implements InterfaceChatServ
     }
 
     public static void main(String[] args) {
+        System.out.println("Starting ChatServer...");
+
         try {
             LocateRegistry.createRegistry(Config.PORT);
         } catch (RemoteException e) {
@@ -44,6 +46,7 @@ public class ChatServer extends UnicastRemoteObject implements InterfaceChatServ
 
         try {
             System.setProperty("java.rmi.server.hostname", Config.IP_SERVER);
+            System.setProperty("sun.rmi.transport.connectionTimeout", "60000");
             TimeServer time_server = new TimeServer();
             ChatServer chat_server = new ChatServer();
             Naming.rebind(Config.CHAT_SERVER, chat_server);
