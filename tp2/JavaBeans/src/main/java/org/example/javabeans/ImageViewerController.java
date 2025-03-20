@@ -6,6 +6,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.DirectoryChooser;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.util.Duration;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
@@ -13,11 +17,12 @@ import java.util.List;
 public class ImageViewerController {
 
     @FXML private ImageView imageView;
-    @FXML private Label labelImageCount;
-    @FXML private Button btnFirst, btnPrevious, btnNext, btnLast;
+    @FXML private Label labelImageCount, labelFolderName, labelTimer;
+    @FXML private Button btnSelectDirectory, btnFirst, btnPrevious, btnNext, btnLast;
     @FXML private CheckBox checkLoop, checkDiaporama;
     @FXML private TextField textDelay;
 
+    private Timeline diaporamaTimeline;
     private List<File> imageFiles;
     private int currentIndex = 0;
 
@@ -32,6 +37,7 @@ public class ImageViewerController {
         File selectedDirectory = directoryChooser.showDialog(null);
 
         if (selectedDirectory != null) {
+            labelFolderName.setText(selectedDirectory.getName());
             loadImages(selectedDirectory);
         }
 
@@ -95,6 +101,44 @@ public class ImageViewerController {
             imageView.setImage(new Image(imageFiles.get(currentIndex).toURI().toString()));
         }
     }
+
+    @FXML
+    private void toggleDiaporama() {
+        if (checkDiaporama.isSelected()) {
+            startDiaporama();
+        } else {
+            stopDiaporama();
+        }
+    }
+
+    private void startDiaporama() {
+        if (imageFiles == null || imageFiles.isEmpty()) {
+            checkDiaporama.setSelected(false);
+            return;
+        }
+
+        double delayInSeconds;
+        try {
+            delayInSeconds = Double.parseDouble(textDelay.getText());
+            if (delayInSeconds <= 0) throw new NumberFormatException();
+        } catch (NumberFormatException e) {
+            textDelay.setText("2");
+            delayInSeconds = 2;
+        }
+
+        diaporamaTimeline = new Timeline(new KeyFrame(Duration.seconds(delayInSeconds), event -> {
+            showNextImage();
+        }));
+        diaporamaTimeline.setCycleCount(Timeline.INDEFINITE);
+        diaporamaTimeline.play();
+    }
+
+    private void stopDiaporama() {
+        if (diaporamaTimeline != null) {
+            diaporamaTimeline.stop();
+        }
+    }
+
 
     private void updateButtonsState() {
         boolean hasImages = imageFiles != null && !imageFiles.isEmpty();
