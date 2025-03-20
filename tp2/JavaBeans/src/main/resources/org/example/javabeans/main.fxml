@@ -11,22 +11,24 @@
       alignment="CENTER"
       xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.javabeans.ImageViewerController">
+      fx:controller="org.example.javabeans.ImageViewerController"
+      stylesheets="@style.css"
+      styleClass="root">
+
 <Button fx:id="btnSelectDirectory" text="Select Folder" onAction="#selectDirectory"/>
-<Label fx:id="labelFolderName" text="-"/>
+<Label fx:id="labelFolderName" text="No folder selected"/>
 <Label fx:id="labelImageCount" text="Total of images: 0"/>
 
+<ImageView fx:id="imageView" fitWidth="500" fitHeight="300" styleClass="image-view"/>
 
-    <ImageView fx:id="imageView" fitWidth="500" fitHeight="300"/>
-
-<HBox spacing="10" alignment="CENTER">
-    <Button fx:id="btnFirst" text="First" onAction="#showFirstImage"/>
-    <Button fx:id="btnPrevious" text="Previous" onAction="#showPreviousImage"/>
-    <Button fx:id="btnNext" text="Next" onAction="#showNextImage"/>
-    <Button fx:id="btnLast" text="Last" onAction="#showLastImage"/>
+<HBox spacing="10" alignment="CENTER" styleClass="hbox">
+    <Button fx:id="btnFirst" text="◀◀ First" onAction="#showFirstImage"/>
+    <Button fx:id="btnPrevious" text="◀ Previous" onAction="#showPreviousImage"/>
+    <Button fx:id="btnNext" text="Next ▶" onAction="#showNextImage"/>
+    <Button fx:id="btnLast" text="Last ▶▶" onAction="#showLastImage"/>
 </HBox>
 
-<HBox spacing="10" alignment="CENTER">
+<HBox spacing="10" alignment="CENTER" styleClass="hbox">
     <CheckBox fx:id="checkLoop" text="Loop"/>
     <CheckBox fx:id="checkDiaporama" text="Diaporama" onAction="#toggleDiaporama"/>
     <Label fx:id="labelTimer" text="Interval (s) :"/>
