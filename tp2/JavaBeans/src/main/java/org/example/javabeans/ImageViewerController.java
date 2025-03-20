@@ -22,6 +22,8 @@ public class ImageViewerController {
     @FXML private CheckBox checkLoop, checkDiaporama;
     @FXML private TextField textDelay;
 
+    private final DirectoryObserver directoryObserver = new DirectoryObserver();
+
     private Timeline diaporamaTimeline;
     private List<File> imageFiles;
     private int currentIndex = 0;
@@ -29,6 +31,9 @@ public class ImageViewerController {
     @FXML
     public void initialize() {
         updateButtonsState();
+        directoryObserver.addPropertyChangeListener(evt -> {
+            labelImageCount.setText("Total of images: " + evt.getNewValue());
+        });
     }
 
     @FXML
@@ -44,11 +49,12 @@ public class ImageViewerController {
         updateButtonsState();
     }
 
+
     private void loadImages(File directory) {
         File[] files = directory.listFiles((dir, name) -> name.matches(".*\\.(jpg|png|jpeg)"));
         if (files != null) {
             imageFiles = Arrays.asList(files);
-            labelImageCount.setText("Total of images: " + imageFiles.size());
+            directoryObserver.setImageCount(imageFiles.size());
             if (!imageFiles.isEmpty()) {
                 currentIndex = 0;
                 showImage();
@@ -122,8 +128,8 @@ public class ImageViewerController {
             delayInSeconds = Double.parseDouble(textDelay.getText());
             if (delayInSeconds <= 0) throw new NumberFormatException();
         } catch (NumberFormatException e) {
-            textDelay.setText("2");
-            delayInSeconds = 2;
+            textDelay.setText("1");
+            delayInSeconds = 1;
         }
 
         diaporamaTimeline = new Timeline(new KeyFrame(Duration.seconds(delayInSeconds), event -> {

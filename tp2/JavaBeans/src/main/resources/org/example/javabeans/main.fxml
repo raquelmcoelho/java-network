@@ -16,7 +16,8 @@
 <Label fx:id="labelFolderName" text="-"/>
 <Label fx:id="labelImageCount" text="Total of images: 0"/>
 
-<ImageView fx:id="imageView" fitWidth="500" fitHeight="300"/>
+
+    <ImageView fx:id="imageView" fitWidth="500" fitHeight="300"/>
 
 <HBox spacing="10" alignment="CENTER">
     <Button fx:id="btnFirst" text="First" onAction="#showFirstImage"/>
