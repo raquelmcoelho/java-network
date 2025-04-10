@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ddac6a8-a23e-4485-bfcf-4d29361bddb3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tennis.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tennis.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +35,15 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -67,12 +59,16 @@
   "associatedIndex": 3
 }]]></component>
   <component name="ProjectId" id="2vY5Pkya3MdlF9mv0nR3xXfPmV0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.Build technojava_tp3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -255,7 +251,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744309145033</updated>
-      <workItem from="1744309146076" duration="3623000" />
+      <workItem from="1744309146076" duration="5766000" />
     </task>
     <servers />
   </component>
