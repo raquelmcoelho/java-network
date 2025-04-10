@@ -9,6 +9,8 @@ import jakarta.persistence.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -112,6 +114,28 @@ public class Database {
 		return (AdherentEntity) query.getSingleResultOrNull();
 	}
 
+	public List<TournoiEntity> listRegisteredTournament(int adherent) {
+		final TypedQuery<TournoiEntity> query = entityManager.createQuery("FROM TournoiEntity t JOIN InscriptionEntity i ON t.codeTournoi = i.codeTournoi WHERE i.numeroAdherent = :adherent", TournoiEntity.class);
+		query.setParameter("adherent", adherent);
+		return query.getResultList();
+	}
+
+	public List<TournoiEntity> listTournament() {
+		final TypedQuery<TournoiEntity> query = entityManager.createQuery("FROM TournoiEntity", TournoiEntity.class);
+		return query.getResultList();
+	}
+
+	public InscriptionEntity addTournoi(int numeroAdherent, int codeTournoi) {
+		InscriptionEntity inscription = new InscriptionEntity();
+		inscription.setCodeTournoi(Integer.parseInt(XSSReplacer(String.valueOf(codeTournoi))));
+		inscription.setAdherent(Integer.parseInt(XSSReplacer(String.valueOf(numeroAdherent))));
+		Date date = Date.valueOf(LocalDate.now());
+		inscription.setDateInscription(date);
+		entityManager.getTransaction().begin();
+		entityManager.persist(inscription);
+		entityManager.getTransaction().commit();
+		return inscription;
+	}
 
 
 }

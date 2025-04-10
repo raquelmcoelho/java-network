@@ -13,7 +13,7 @@
         <br>
         <form action="<%=path%>/action" method="post">
             <input type="hidden" name="code" value="L"/>
-            <label for="username"></label><input type="text" name="username" placeholder="Email" id="username" required> <br> <br>
+            <label for="username"></label><input type="text" name="username" placeholder="Email" id="username" required autofocus> <br> <br>
             <label for="password"></label><input type="password" name="password" placeholder="Password" id="password" required> <br> <br>
             <button>Login</button>
         </form>

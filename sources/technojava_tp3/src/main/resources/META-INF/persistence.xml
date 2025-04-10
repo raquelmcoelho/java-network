@@ -7,7 +7,7 @@
         <description>This unit manage Tennis Club data.
             Member (Adherent), tournament (Tournoi) and registration (Inscription).
         </description>
-        <class>fr.ensicaen.tennis.persistence.TodoEntity</class>
+        <class>fr.ensicaen.tennis.persistence.AdherentEntity</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
             <!-- H2 database in file configuration @see Database class -->

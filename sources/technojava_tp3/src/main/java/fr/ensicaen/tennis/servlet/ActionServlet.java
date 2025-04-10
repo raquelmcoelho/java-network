@@ -18,7 +18,7 @@ public class ActionServlet extends HttpServlet {
 		String code = req.getParameter("code");
 		RequestDispatcher requestDispatcher;
 
-		AdherentEntity adherent = (AdherentEntity) req.getSession().getAttribute("adherent");
+	AdherentEntity adherent = (AdherentEntity) req.getSession().getAttribute("adherent");
 		if (adherent == null) {
 			if ("L".equals(code)) {
 				requestDispatcher = req.getRequestDispatcher("/login");
@@ -35,7 +35,7 @@ public class ActionServlet extends HttpServlet {
 		switch (code) {
 
 			case "A":
-				requestDispatcher = req.getRequestDispatcher("/Adherent.jsp");
+				requestDispatcher = req.getRequestDispatcher("/adherent");
 				requestDispatcher.forward(req, resp);
 				break;
 			case "I":

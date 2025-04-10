@@ -26,7 +26,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="<%=path%>/">
+        <a class="navbar-brand" href="<%=path%>/action">
             <img src="<%=path%>/media/tennis_ball.svg" alt="Tennis Ball" width="36" height="36">
             <small class="text-opacity-25">Tennis Club</small>
         </a>

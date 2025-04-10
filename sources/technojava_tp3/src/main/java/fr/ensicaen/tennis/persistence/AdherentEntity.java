@@ -1,5 +1,6 @@
 package fr.ensicaen.tennis.persistence;
 
+import fr.ensicaen.tennis.util.FormatNumber;
 import jakarta.persistence.*;
 
 @Entity
@@ -8,7 +9,7 @@ public class AdherentEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // Utilisation d'IDENTITY car la BDD gère l'auto-incrémentation
 	@Column(name = "numeroAdherent", nullable = false)
-	private long numeroAdherent;
+	private int numeroAdherent;
 
 	@Column(name = "nom", nullable = false, length = 50)
 	private String nom;
@@ -29,11 +30,11 @@ public class AdherentEntity {
 	private String password;
 
 	// Getters et Setters
-	public long getNumeroAdherent() {
+	public int getNumeroAdherent() {
 		return numeroAdherent;
 	}
 
-	public void setNumeroAdherent(long numeroAdherent) {
+	public void setNumeroAdherent(int numeroAdherent) {
 		this.numeroAdherent = numeroAdherent;
 	}
 
@@ -62,7 +63,7 @@ public class AdherentEntity {
 	}
 
 	public String getTelephone() {
-		return telephone;
+		return FormatNumber.formatNumber(telephone);
 	}
 
 	public void setTelephone(String telephone) {

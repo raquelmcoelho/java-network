@@ -1,42 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.ensicaen.tennis.TestDatabase" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-26T14:01:12.774Z" hostname="MSI-PULSE-B13V" time="0.262">
+<testsuite name="fr.ensicaen.tennis.TestDatabase" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-10T20:56:12.429Z" hostname="MSI-PULSE-B13V" time="0.012">
   <properties/>
   <testcase name="insert_todo()" classname="fr.ensicaen.tennis.TestDatabase" time="0.008"/>
-  <testcase name="database_engine_ok()" classname="fr.ensicaen.tennis.TestDatabase" time="0.0"/>
-  <testcase name="get_todo()" classname="fr.ensicaen.tennis.TestDatabase" time="0.251"/>
+  <testcase name="database_engine_ok()" classname="fr.ensicaen.tennis.TestDatabase" time="0.001"/>
+  <testcase name="get_todo()" classname="fr.ensicaen.tennis.TestDatabase" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[mars 26, 2025 3:01:11 PM org.hibernate.jpa.boot.spi.PersistenceXmlParser parsePersistenceXml
-WARN: HHH015018: Encountered multiple persistence-unit stanzas defining same name [tennis]; persistence-unit names must be unique
-mars 26, 2025 3:01:11 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: tennis]
-mars 26, 2025 3:01:11 PM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 7.0.0.Beta1
-mars 26, 2025 3:01:11 PM org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl lambda$normalizeConnectionAccessUserAndPass$6
-WARN: HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
-mars 26, 2025 3:01:11 PM org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl lambda$normalizeConnectionAccessUserAndPass$12
-WARN: HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
-mars 26, 2025 3:01:11 PM org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl normalizeDataAccess
-WARN: HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
-mars 26, 2025 3:01:11 PM org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl normalizeDataAccess
-WARN: HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
-mars 26, 2025 3:01:11 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
-WARN: HHH10001002: Using built-in connection pool (not intended for production use)
-mars 26, 2025 3:01:11 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
-WARN: HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-mars 26, 2025 3:01:11 PM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator logDbInfo
-INFO: HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:tennis]
-	Database driver: org.h2.Driver
-	Database version: 2.3.232
-	Autocommit mode: false
-	Isolation level: undefined/unknown
-	Minimum pool size: 1
-	Maximum pool size: 20
-mars 26, 2025 3:01:12 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-mars 26, 2025 3:01:12 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@425b5fe2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-mars 26, 2025 3:01:12 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@305e95a4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

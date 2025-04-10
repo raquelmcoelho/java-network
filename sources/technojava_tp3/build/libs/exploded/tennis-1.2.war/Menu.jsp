@@ -10,19 +10,24 @@
         AdherentEntity adherent = (AdherentEntity)request.getSession().getAttribute("adherent");
         final String path = request.getContextPath();
     %>
+<div class="container-fluid m-3">
+    <div class="row border my-title">
 
-<h1>Bienvenue, <%=adherent.getPrenom()%>!</h1> <!-- Assuming 'userName' is set as an attribute in the request -->
+<h1>Bienvenue, <%=adherent.getPrenom()%>!</h1>
 
 <h2>Menu des services proposés :</h2>
 
-<div class="parent d-flex justify-content-center align-items-center ">
+    </div>
+</div>
+
+<div class="parent d-flex justify-content-center align-items-center">
 
     <ul class="d-flex p-0">
         <li class="me-4">
             <form action="<%=path%>/action" method="post">
                 <input type="hidden" name="code" value="A" />
                 <button type="submit" class="btn bg-dark  custom-btn">Consultation de votre dossier adhérent <br>
-                <img src="account.png" height="100px" width="100px" alt="" >
+                <img src="media/account.png" height="100px" width="100px" alt="" >
                 </button>
             </form>
         </li>
@@ -30,7 +35,7 @@
             <form action="<%=path%>/action" method="post">
                 <input type="hidden" name="code" value="I" />
                 <button type="submit" class="btn bg-dark  custom-btn">Inscription à un tournoi <br>
-                    <img src="account.png" height="100px" width="100px" alt="" >
+                    <img src="media/account.png" height="100px" width="100px" alt="" >
                 </button>
             </form>
         </li>
