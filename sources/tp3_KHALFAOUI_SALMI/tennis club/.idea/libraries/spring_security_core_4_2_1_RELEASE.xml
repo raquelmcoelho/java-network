@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-security-core-4.2.1.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/tennisClub-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-4.2.1.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,46 @@
+services:
+  postgres:
+    container_name: tennis_db_2024
+    image: postgres
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+      - ./db_init/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_USER: tennis
+      POSTGRES_PASSWORD: my_secured_password
+      POSTGRES_DB: tennis
+      PGDATA: /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+    restart: unless-stopped
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    ports:
+      - "5432:5432"
+  adminer:
+    image: adminer
+    restart: unless-stopped
+    environment:
+      ADMINER_DEFAULT_SERVER: tennis_db_2024
+      # https://github.com/vrana/adminer/tree/master/designs
+      ADMINER_DESIGN: dracula
+    ports:
+      - "8432:8080"
+    links:
+      - postgres
+  tennis_app:
+    container_name: tennis_app_2024
+    restart: unless-stopped
+    environment:
+      DB_HOSTNAME: tennis_db_2024
+    depends_on:
+      postgres:
+        condition: service_healthy
+    build:
+      context: .
+      dockerfile: ./app.Dockerfile
+    ports:
+      - "8080:8080"
+    links:
+      - postgres
+

@@ -1,0 +1,4 @@
+MARIADB_ROOT_PASSWORD=root_ultrasecured_password_for_the_win
+MARIADB_DATABASE=library
+MARIADB_USER=library
+MARIADB_PASSWORD=secured_user_password_because_you_must
