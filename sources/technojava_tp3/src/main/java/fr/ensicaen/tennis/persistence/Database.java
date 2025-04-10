@@ -98,4 +98,20 @@ public class Database {
 		entityManager.getTransaction().commit();
 		return todo;
 	}
+
+	// ********** ADHERENTLIST **********
+
+	public List<AdherentEntity> listAdherent() {
+		final TypedQuery<AdherentEntity> query = entityManager.createQuery("from AdherentEntity a", AdherentEntity.class);
+		return query.getResultList();
+	}
+
+	public AdherentEntity getAdherentByUsername(String username) {
+		final Query query = entityManager.createQuery("from AdherentEntity a where a.email = :username");
+		query.setParameter("username", username);
+		return (AdherentEntity) query.getSingleResultOrNull();
+	}
+
+
+
 }

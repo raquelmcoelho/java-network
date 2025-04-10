@@ -1,0 +1,90 @@
+/*!
+ * @Author JRD
+ */
+
+.square-translucent-btn {
+    width: 300px; /* Largeur fixe pour carré */
+    height: 300px; /* Hauteur fixe pour carré */
+    background-color: rgba(255, 255, 255, 0.1); /* Translucide */
+    backdrop-filter: blur(4px); /* Flou derrière si pris en charge */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Bord translucide */
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 0.5rem; /* Coins whitearrondis */
+    transition: all 0.3s ease;
+}
+
+.square-translucent-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.custom-btn {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7); /* noir translucide */
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.parent {
+    width: 80%; /* Largeur fixe ou selon ce que tu veux */
+    max-width: 600px; /* Maximum pour l'échelle sur grand écran */
+    height: 750px; /* Hauteur fixée ou dynamique */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Pour centrer le conteneur parent dans la page */
+    flex-direction: column;
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+input:read-only {
+    border: dashed 1px;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+body {
+    background-image: url("../media/TennisGrassCourt.jpg");
+    background-repeat: repeat;
+    /*background: linear-gradient(to bottom right, #e6f7ff, #ffffff) fixed;*/
+}
+
+[data-bs-theme=dark] .my-title {
+    color: var(--bs-light-text-emphasis);
+    background-color: var(--bs-dark);
+    border-radius: var(--bs-border-radius-lg);
+    border-width: 2px;
+    border-color: var(--bs-light);
+}
+
+[data-bs-theme=light] .my-title {
+    color: var(--bs-dark-rgb);
+    background-color: var(--bs-light);
+    border-radius: var(--bs-border-radius-lg);
+    border-width: 2px;
+    border-color: var(--bs-dark);
+}

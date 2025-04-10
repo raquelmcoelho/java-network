@@ -10,7 +10,7 @@
 	<jsp:param name="credentials" value="false"/>
 </jsp:include>
 
-<jsp:useBean id="todoBean" class="fr.ensicaen.tennis.bean.TodoBean" scope="request">
+<jsp:useBean id="todoBean" class="fr.ensicaen.tennis.bean.AdherentBean" scope="request">
 	<%
 		final List<TodoEntity> todos = todoBean.getTodoList();
 		final TodoEntity new_todo = (TodoEntity)request.getAttribute("new_todo");
