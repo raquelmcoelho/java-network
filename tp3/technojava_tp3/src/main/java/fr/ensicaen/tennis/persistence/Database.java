@@ -98,4 +98,18 @@ public class Database {
 		entityManager.getTransaction().commit();
 		return todo;
 	}
+
+
+	// ********** ADHERENT **********
+	public List<AdherentEntity> listAdherents() {
+		final TypedQuery<AdherentEntity> query = entityManager.createQuery("from AdherentEntity t", AdherentEntity.class);
+		return query.getResultList();
+	}
+
+	public List<TournoiEntity> listTournois() {
+		final TypedQuery<TournoiEntity> query = entityManager.createQuery("from TournoiEntity t", TournoiEntity.class);
+		return query.getResultList();
+	}
+
+
 }

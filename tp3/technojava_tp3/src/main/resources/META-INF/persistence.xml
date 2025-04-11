@@ -8,10 +8,13 @@
             Member (Adherent), tournament (Tournoi) and registration (Inscription).
         </description>
         <class>fr.ensicaen.tennis.persistence.TodoEntity</class>
+        <class>fr.ensicaen.tennis.persistence.TournoiEntity</class>
+        <class>fr.ensicaen.tennis.persistence.AdherentEntity</class>
+        <class>fr.ensicaen.tennis.persistence.InscriptionEntity</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
             <!-- H2 database in file configuration @see Database class -->
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:file:~/h2/tennis;LOCK_MODE=0;DB_CLOSE_DELAY=0;" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:file:./webapp/WEB-INF/db/tennis;LOCK_MODE=0;DB_CLOSE_DELAY=0;" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
             <!-- H2 in memory database configuration -->
 <!--            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:tennis" />-->
