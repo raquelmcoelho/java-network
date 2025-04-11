@@ -1,8 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Joan Reynaud
-  Date: 26/02/2025
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="fr.ensicaen.tennis.persistence.TodoEntity" %>
 <%@ page import="java.util.List" %>

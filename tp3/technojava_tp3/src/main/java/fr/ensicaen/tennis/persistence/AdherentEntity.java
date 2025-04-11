@@ -24,31 +24,31 @@ public class AdherentEntity {
 
     @Basic
     @Column(name="nom", length = 255)
-    public String geNom() { return nom; }
+    public String getNom() { return nom; }
     public void setNom(String nom) {this.nom = nom; }
 
     @Basic
     @Column(name="prenom", length = 255)
-    public String gePrenom() { return prenom; }
+    public String getPrenom() { return prenom; }
     public void setPrenom(String prenom) {this.prenom = prenom; }
 
     @Basic
     @Column(name = "adresse", length=255)
-    public String geAdresse() { return adresse; }
+    public String getAdresse() { return adresse; }
     public void setAdresse(String adresse) {this.adresse = adresse; }
 
     @Basic
     @Column(name = "telephone", length=255)
-    public String geTelephone() { return telephone; }
+    public String getTelephone() { return telephone; }
     public void setTelephone(String telephone) {this.telephone = telephone; }
 
     @Basic
     @Column(name = "email", length=255, nullable = false, unique = true)
-    public String geEmail() { return email; }
+    public String getEmail() { return email; }
     public void setEmail(String email) {this.email = email; }
 
     @Basic
     @Column(name = "password", length=255, nullable = false)
-    public String gePassword() { return password; }
+    public String getPassword() { return password; }
     public void setPassword(String password) {this.password = password; }
 }

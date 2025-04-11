@@ -9,46 +9,40 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(name="action", urlPatterns = "/action")
 public class ActionServlet extends HttpServlet {
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String action = req.getParameter("action");
-		// - Vérifie que l’utilisateur (adhérent) possède une session active ( déjà
-		// authentifié ) :
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		HttpSession session = request.getSession(false);
+		String code = request.getParameter("code");
 
-		// - Si non :
-		// Si action == « L » ( « login » ) forward à LoginServlet
-		// Sinon forward à Login.html
+		boolean sessionStillValid = (session != null && session.getAttribute("/service/adherent") != null);
 
-		// - Si oui :
-		// Si action == « A » ( « dossier adherent » ) forward
-		// 		àAdherentServlet
-		// Si action == « I » ( « inscription tournoi » ) forward
-		// 		àInscriptionServlet
-		// - Autre cas (autre valeur ou pas de code action) forward à Menu.jsp
-
-		// Cria ou pega a sessão
-		HttpSession session = req.getSession(true);
-//		session.setAttribute("adherent", adherent);
-//		Adherent user = (Adherent) session.getAttribute("adherent");
-		if (session.isNew()) {
-			System.out.println("New session");
-			session.setMaxInactiveInterval(10); // 5 min
+		if (!sessionStillValid) {
+			if ("L".equals(code)) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/service/login");
+				dispatcher.forward(request, response);
+			} else {
+				response.sendRedirect("Login.html");
+			}
+			return;
 		}
 
-		RequestDispatcher rd = req.getRequestDispatcher("Login.html");
-		rd.forward(req, resp);
+		switch (code) {
+			case "A":
+				request.getRequestDispatcher("/service/adherent").forward(request, response);
+				break;
+			case "I":
+				request.getRequestDispatcher("/service/inscription").forward(request, response);
+				break;
+			default:
+				request.getRequestDispatcher("Menu.jsp").forward(request, response);
+		}
 	}
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String code = req.getParameter("code");
-		PrintWriter w = resp.getWriter();
-		w.println("<HTML><BODY>");
-		w.println("<br/>Le code est : "+code);
-		w.println("</BODY></HTML");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
 	}
 }

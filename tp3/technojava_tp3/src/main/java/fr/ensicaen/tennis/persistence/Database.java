@@ -106,6 +106,12 @@ public class Database {
 		return query.getResultList();
 	}
 
+	public AdherentEntity getAdherentByEmail(String email) {
+		final Query query = entityManager.createQuery("from AdherentEntity t where t.email like :email");
+		query.setParameter("email", email);
+		return (AdherentEntity)query.getSingleResult();
+	}
+	// ********** TOURNOI **********
 	public List<TournoiEntity> listTournois() {
 		final TypedQuery<TournoiEntity> query = entityManager.createQuery("from TournoiEntity t", TournoiEntity.class);
 		return query.getResultList();

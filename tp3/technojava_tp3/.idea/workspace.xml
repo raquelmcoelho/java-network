@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ddac6a8-a23e-4485-bfcf-4d29361bddb3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/sql/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +49,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="Servlet" />
+        <option value="raquel-servlet" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,12 +89,13 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/raquel/Documents/2Semester/technojava/tp3/technojava_tp3",
+    "last_opened_file_path": "/home/raquel/Documents/2Semester/technojava/sources/technojava_tp3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -251,11 +265,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744309145033</updated>
-      <workItem from="1744309146076" duration="5766000" />
+      <workItem from="1744309146076" duration="14467000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
