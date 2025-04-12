@@ -1,8 +1,6 @@
 package fr.ensicaen.tennis.bean;
 
-import fr.ensicaen.tennis.persistence.AdherentEntity;
 import fr.ensicaen.tennis.persistence.Database;
-import fr.ensicaen.tennis.persistence.TodoEntity;
 import fr.ensicaen.tennis.util.Logger;
 import fr.ensicaen.tennis.util.TournoiInscriptionDTO;
 

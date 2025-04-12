@@ -16,7 +16,7 @@
 
     <div class="row justify-content-center">
         <div class="col-md-5 mb-4">
-            <div class="card shadow-sm border-primary">
+            <div class="card shadow-sm border-success">
                 <div class="card-body text-center">
                     <h5 class="card-title">Consulter votre dossier</h5>
                     <p class="card-text">Accédez à toutes les informations concernant votre adhésion.</p>

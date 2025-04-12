@@ -35,15 +35,14 @@
                     <td>
 
                     <%
-                        int codeTournoi = tournoi.getCodeTournoi();
-                        int numeroAdherent = (int) request.getAttribute("numeroAdherent");
-                        if(inscriptionBean.isAlreadyDone(codeTournoi, numeroAdherent)) {
+                    int codeTournoi = tournoi.getCodeTournoi();
+                    int numeroAdherent = (int) request.getAttribute("numeroAdherent");
+                    if(inscriptionBean.isAlreadyDone(codeTournoi, numeroAdherent)) {
                     %>
-                        <a href="" disabled="true" class="btn btn-primary">Inscription</a>
+                        <a class="btn btn-secondary disabled" tabindex="-1" aria-disabled="true">Inscription</a>
                     <% } else { %>
                         <a href="service/inscription?tournoi=<%=tournoi.getCodeTournoi()%>" class="btn btn-primary">Inscription</a>
                     <% } %>
-                    </td>
                 </tr>
                 <%}%>
             </tbody>

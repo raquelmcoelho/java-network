@@ -17,11 +17,19 @@
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/AdherentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/AdherentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/TodoBean.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionStatus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionStatus.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/TodoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/TodoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/AddTodo.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ListTodo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Menu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/myapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/myapp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/ensicaen/tennis/TestDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/ensicaen/tennis/TestDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +44,25 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="tennis" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tennis" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tennis" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -88,9 +109,11 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.Build technojava_tp3.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.TestDatabase.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.Tomcat 10.1.40.executor": "Run",
+    "Tomcat Server.header.jsp.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -100,7 +123,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -272,7 +295,7 @@
       <updated>1744309145033</updated>
       <workItem from="1744309146076" duration="14467000" />
       <workItem from="1744363961608" duration="2437000" />
-      <workItem from="1744417434000" duration="19849000" />
+      <workItem from="1744417434000" duration="22454000" />
     </task>
     <servers />
   </component>

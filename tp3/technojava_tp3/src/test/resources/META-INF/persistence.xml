@@ -5,7 +5,9 @@
              version="3.1">
     <persistence-unit name="tennis" transaction-type="RESOURCE_LOCAL" >
         <description>Test Unit</description>
-        <class>fr.ensicaen.tennis.persistence.TodoEntity</class>
+        <class>fr.ensicaen.tennis.persistence.TournoiEntity</class>
+        <class>fr.ensicaen.tennis.persistence.AdherentEntity</class>
+        <class>fr.ensicaen.tennis.persistence.InscriptionEntity</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
             <property name="javax.persistence.jdbc.url"    value="jdbc:h2:mem:tennis" />

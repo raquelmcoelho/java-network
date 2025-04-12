@@ -75,31 +75,6 @@ public class Database {
 		return s;
 	}
 
-	// ********** TODOLIST **********
-
-	public List<TodoEntity> listTodo() {
-		final TypedQuery<TodoEntity> query = entityManager.createQuery("from TodoEntity t", TodoEntity.class);
-		return query.getResultList();
-	}
-
-	public TodoEntity getTodoById(int id) {
-		final Query query = entityManager.createQuery("from TodoEntity t where t.idTodo = :id");
-		query.setParameter("id", id);
-		return (TodoEntity)query.getSingleResult();
-	}
-
-	public TodoEntity addTodoByDescription(String description) {
-		if (description == null || description.isEmpty()) return null;
-		TodoEntity todo = new TodoEntity();
-		todo.setDescription(XSSReplacer(description));
-		entityManager.getTransaction().begin();
-		entityManager.persist(todo);
-		entityManager.getTransaction().commit();
-		return todo;
-	}
-
-
-	// ********** ADHERENT **********
 	public List<AdherentEntity> listAdherents() {
 		final TypedQuery<AdherentEntity> query = entityManager.createQuery("from AdherentEntity t", AdherentEntity.class);
 		return query.getResultList();
@@ -111,7 +86,6 @@ public class Database {
 		return query.getResultList().stream().findFirst();
 	}
 
-	// ********** TOURNOI **********
 	public List<TournoiEntity> listTournois() {
 		final TypedQuery<TournoiEntity> query = entityManager.createQuery("from TournoiEntity t", TournoiEntity.class);
 		return query.getResultList();
