@@ -16,9 +16,6 @@ public class AdherentBean {
         logger.debug("Loading bean.");
     }
 
-    public List<AdherentEntity> getTodoList() {
-        return database.listAdherents();
-    }
     public List<TournoiInscriptionDTO> getTournoiInfosByAdherent(int numeroAdherent) {
         return database.getTournoiInfosByAdherent(numeroAdherent);
     }

@@ -16,11 +16,10 @@
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/TournoiBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/TournoiBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/AdherentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/AdherentBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Adherent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Adherent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionStatus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionStatus.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" afterDir="false" />
     </list>
@@ -273,7 +272,7 @@
       <updated>1744309145033</updated>
       <workItem from="1744309146076" duration="14467000" />
       <workItem from="1744363961608" duration="2437000" />
-      <workItem from="1744417434000" duration="15688000" />
+      <workItem from="1744417434000" duration="19849000" />
     </task>
     <servers />
   </component>

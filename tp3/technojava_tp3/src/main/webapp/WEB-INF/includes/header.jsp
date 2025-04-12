@@ -19,25 +19,22 @@
 	<div class="container-fluid">
 		<a class="navbar-brand" href="<%=path%>/">
 			<img src="<%=path%>/media/tennis_ball.svg" alt="Tennis Ball" width="36" height="36">
-			<span class="ms-2 fw-bold"><%=ApplicationProperties.get("club_name")%></span>
-			<small class="d-block text-muted ms-2"><%=ApplicationProperties.get("club_address")%><br>Tél : <%=ApplicationProperties.get("club_number")%></small>
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<form action="<%=path%>/AddTodo.jsp" method="post">
-						<input type="hidden" name="parameter" value="value" />
-						<button type="submit" class="nav-link">Ajout Todo</button>
-					</form>
+				<li class="nav-item"> <span class="ms-2 fw-bold"><%=ApplicationProperties.get("club_name")%></span> </li>
+				<li class="nav-item"> <small class="d-block text-muted ms-2"><%=ApplicationProperties.get("club_address")%><br>Tél : <%=ApplicationProperties.get("club_number")%></small> </li>
 
-				</li>
+				<% if( session != null && session.getAttribute("adherent") != null ) { %>
 				<li class="nav-item">
-					<a href="<%=path%>/ListTodo.jsp" class="nav-link">List Todo</a>
+					<form action="<%=path%>/Menu.jsp" method="post">
+						<button type="submit" class="nav-link">Retour au menu</button>
+					</form>
 				</li>
-			</ul>
+				<% } %>
 		</div>
 	</div>
 </nav>

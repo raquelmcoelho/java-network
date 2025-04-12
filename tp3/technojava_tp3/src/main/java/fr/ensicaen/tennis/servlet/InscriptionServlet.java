@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -15,22 +16,26 @@ import java.io.IOException;
 public class InscriptionServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String codeTournoi = req.getParameter("tournoi");
+        Database database = Database.getInstance();
+        String codeTournoiStr = req.getParameter("tournoi");
+        int numeroAdherent = ((AdherentEntity) req.getSession().getAttribute("adherent")).getNumeroAdherent();
 
-        if (codeTournoi == null) {
+        if (codeTournoiStr == null) {
+            req.setAttribute("numeroAdherent", numeroAdherent);
             req.getRequestDispatcher("/InscriptionTournois.jsp").forward(req, resp);
             return;
         }
 
         // Cas: Enregistrement de l'inscription
-        int code = Integer.parseInt(codeTournoi);
-        AdherentEntity adherent = (AdherentEntity) req.getSession().getAttribute("adherent");
-        if(Database.getInstance().registerAdherentTo(code, adherent.getNumeroAdherent())) {
-                req.setAttribute("status", "Inscription réussie pour le tournoi");
-        } else {
-            req.setAttribute("status", "La tentative a échoué");
+        int codeTournoi = Integer.parseInt(codeTournoiStr);
+        boolean success = database.registerAdherentTo(codeTournoi, numeroAdherent);
+
+        if(success) {
+            req.setAttribute("status", "Inscription réussie pour le tournoi");
         }
 
+        req.setAttribute("success", success);
+        req.setAttribute("tournoi", database.getTournoiByCode(codeTournoi));
         req.getRequestDispatcher("/InscriptionStatus.jsp").forward(req, resp);
 
     }

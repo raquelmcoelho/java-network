@@ -7,6 +7,7 @@
 </jsp:include>
 
 <jsp:useBean id="tournoiBean" class="fr.ensicaen.tennis.bean.TournoiBean" scope="request">
+    <jsp:useBean id="inscriptionBean" class="fr.ensicaen.tennis.bean.InscriptionBean" scope="request">
     <%
         final List<TournoiEntity> tournois = tournoiBean.getTournoiList();
     %>
@@ -32,11 +33,15 @@
                     <td><%=new SimpleDateFormat("dd/MM/yy").format(tournoi.getDate()) %></td>
                     <td><%=tournoi.getLieu() %></td>
                     <td>
-<%--                    <%if(tournoiBean.isAlreadyAdherent(tournoi.getCodeTournoi())) {%>--%>
-                    <% if(true) {%>
-                        <a href="service/inscription?tournoi=<%=tournoi.getCodeTournoi()%>" class="btn btn-primary">Inscription</a>
-                    <% } else { %>
+
+                    <%
+                        int codeTournoi = tournoi.getCodeTournoi();
+                        int numeroAdherent = (int) request.getAttribute("numeroAdherent");
+                        if(inscriptionBean.isAlreadyDone(codeTournoi, numeroAdherent)) {
+                    %>
                         <a href="" disabled="true" class="btn btn-primary">Inscription</a>
+                    <% } else { %>
+                        <a href="service/inscription?tournoi=<%=tournoi.getCodeTournoi()%>" class="btn btn-primary">Inscription</a>
                     <% } %>
                     </td>
                 </tr>
@@ -44,5 +49,6 @@
             </tbody>
         </table>
     </div>
+</jsp:useBean>
 </jsp:useBean>
 <jsp:include page="WEB-INF/includes/footer.jsp" />

@@ -108,13 +108,30 @@ public class Database {
 	public Optional<AdherentEntity> getAdherentByEmail(String email) {
 		final TypedQuery<AdherentEntity> query = entityManager.createQuery("from AdherentEntity t where t.email like :email", AdherentEntity.class);
 		query.setParameter("email", email);
-		return  query.getResultList().stream().findFirst();
+		return query.getResultList().stream().findFirst();
 	}
 
 	// ********** TOURNOI **********
 	public List<TournoiEntity> listTournois() {
 		final TypedQuery<TournoiEntity> query = entityManager.createQuery("from TournoiEntity t", TournoiEntity.class);
 		return query.getResultList();
+	}
+
+	public TournoiEntity getTournoiByCode(int code) {
+		return entityManager.find(TournoiEntity.class, code);
+	}
+
+	public boolean adherentAlreadyRegisteredForTournoi(int codeTournoi, int numeroAdherent) {
+		final Query query = entityManager.createQuery(
+				"select count(*) from InscriptionEntity i " +
+						"where i.codeTournoi = :codeTournoi " +
+						"and i.numeroAdherent = :numeroAdherent"
+		);
+		query.setParameter("codeTournoi", codeTournoi);
+		query.setParameter("numeroAdherent", numeroAdherent);
+		Long count = (Long) query.getSingleResult();
+
+		return (count > 0);
 	}
 
 	public List<TournoiInscriptionDTO> getTournoiInfosByAdherent(int numeroAdherent) {
@@ -141,24 +158,24 @@ public class Database {
 		return dtos;
 	}
 
-		public boolean registerAdherentTo(int codeTournoi, int numeroAdherent) {
-			TournoiEntity tournoi = entityManager.find(TournoiEntity.class, codeTournoi);
+	public boolean registerAdherentTo(int codeTournoi, int numeroAdherent) {
+		TournoiEntity tournoi = entityManager.find(TournoiEntity.class, codeTournoi);
 
-			if (tournoi != null) {
-				InscriptionEntity inscription = new InscriptionEntity();
-				inscription.setNumeroAdherent(numeroAdherent);
-				inscription.setCodeTournoi(codeTournoi);
-				inscription.setDateInscription(new Date());
+		if (tournoi != null) {
+			InscriptionEntity inscription = new InscriptionEntity();
+			inscription.setNumeroAdherent(numeroAdherent);
+			inscription.setCodeTournoi(codeTournoi);
+			inscription.setDateInscription(new Date());
 
-				entityManager.getTransaction().begin();
-				entityManager.persist(inscription);
-				entityManager.getTransaction().commit();
-				return true;
-			} else {
-				return false;
-			}
-
+			entityManager.getTransaction().begin();
+			entityManager.persist(inscription);
+			entityManager.getTransaction().commit();
+			return true;
+		} else {
+			return false;
 		}
+
+	}
 
 
 }
