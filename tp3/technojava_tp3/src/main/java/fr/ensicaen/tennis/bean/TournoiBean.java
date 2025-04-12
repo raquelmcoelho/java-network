@@ -14,7 +14,7 @@ public class TournoiBean {
         logger.debug("Loading bean.");
     }
 
-    public List<TournoiEntity> getTodoList() {
+    public List<TournoiEntity> getTournoiList() {
         return database.listTournois();
     }
 }

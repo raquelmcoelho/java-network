@@ -1,8 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Joan Reynaud
-  Date: 26/02/2025
---%>
+<%@ page import="fr.ensicaen.tennis.ApplicationProperties" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%
 	final String path = request.getContextPath();
@@ -23,7 +19,8 @@
 	<div class="container-fluid">
 		<a class="navbar-brand" href="<%=path%>/">
 			<img src="<%=path%>/media/tennis_ball.svg" alt="Tennis Ball" width="36" height="36">
-			<small class="text-opacity-25">Tennis Club</small>
+			<span class="ms-2 fw-bold"><%=ApplicationProperties.get("club_name")%></span>
+			<small class="d-block text-muted ms-2"><%=ApplicationProperties.get("club_address")%><br>Tél : <%=ApplicationProperties.get("club_number")%></small>
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

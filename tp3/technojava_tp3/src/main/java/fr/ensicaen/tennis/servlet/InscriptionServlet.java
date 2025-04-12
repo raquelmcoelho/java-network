@@ -1,5 +1,8 @@
 package fr.ensicaen.tennis.servlet;
 
+import fr.ensicaen.tennis.persistence.AdherentEntity;
+import fr.ensicaen.tennis.persistence.Database;
+import fr.ensicaen.tennis.persistence.TournoiEntity;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,19 +13,30 @@ import java.io.IOException;
 
 @WebServlet(name="inscription", urlPatterns = "/service/inscription")
 public class InscriptionServlet extends HttpServlet {
-//    InscriptionServlet :
-//    Paramètre de la requête : « Code tournoi » ( tournoi=xxx )
-//            2 cas de figure :
-//            - pas de « code tournoi », afficher la liste de tous les tournois pour
-//    inscription éventuelle : forward à InscriptionTournois.jsp
-//- « code tournoi » présent, enregistrer l’inscription puis forward
-//InscriptionStatus.jsp (pour afficher l’état de l’inscription)
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String codeTournoi = req.getParameter("tournoi");
+
+        if (codeTournoi == null) {
+            req.getRequestDispatcher("/InscriptionTournois.jsp").forward(req, resp);
+            return;
+        }
+
+        // Cas: Enregistrement de l'inscription
+        int code = Integer.parseInt(codeTournoi);
+        AdherentEntity adherent = (AdherentEntity) req.getSession().getAttribute("adherent");
+        if(Database.getInstance().registerAdherentTo(code, adherent.getNumeroAdherent())) {
+                req.setAttribute("status", "Inscription réussie pour le tournoi");
+        } else {
+            req.setAttribute("status", "La tentative a échoué");
+        }
+
+        req.getRequestDispatcher("/InscriptionStatus.jsp").forward(req, resp);
+
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
     }
 }

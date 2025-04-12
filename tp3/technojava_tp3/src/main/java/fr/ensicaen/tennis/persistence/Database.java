@@ -141,5 +141,24 @@ public class Database {
 		return dtos;
 	}
 
+		public boolean registerAdherentTo(int codeTournoi, int numeroAdherent) {
+			TournoiEntity tournoi = entityManager.find(TournoiEntity.class, codeTournoi);
+
+			if (tournoi != null) {
+				InscriptionEntity inscription = new InscriptionEntity();
+				inscription.setNumeroAdherent(numeroAdherent);
+				inscription.setCodeTournoi(codeTournoi);
+				inscription.setDateInscription(new Date());
+
+				entityManager.getTransaction().begin();
+				entityManager.persist(inscription);
+				entityManager.getTransaction().commit();
+				return true;
+			} else {
+				return false;
+			}
+
+		}
+
 
 }

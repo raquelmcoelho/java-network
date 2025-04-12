@@ -81,5 +81,5 @@
         </div>
     </div>
 
-    <jsp:include page="WEB-INF/includes/footer.jsp" />
 </jsp:useBean>
+<jsp:include page="WEB-INF/includes/footer.jsp" />

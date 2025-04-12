@@ -12,12 +12,17 @@
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/sql/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/TournoiBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/bean/TournoiBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Adherent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Adherent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +72,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2vY5Pkya3MdlF9mv0nR3xXfPmV0" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -83,19 +88,20 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.Build technojava_tp3.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.Tomcat 10.1.40.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/raquel/Documents/2Semester/technojava/sources/technojava_tp3",
+    "last_opened_file_path": "/home/raquel/Documents/2Semester/technojava/tp3/technojava_tp3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -266,6 +272,8 @@
       <option name="presentableId" value="Default" />
       <updated>1744309145033</updated>
       <workItem from="1744309146076" duration="14467000" />
+      <workItem from="1744363961608" duration="2437000" />
+      <workItem from="1744417434000" duration="15688000" />
     </task>
     <servers />
   </component>
