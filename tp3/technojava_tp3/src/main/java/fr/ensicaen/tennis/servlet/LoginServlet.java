@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
+import java.util.Optional;
 
 @WebServlet(name="login", urlPatterns = "/service/login")
 public class LoginServlet extends HttpServlet {
@@ -19,15 +20,29 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
-        AdherentEntity adherent = Database.getInstance().getAdherentByEmail(email);
+        Optional<AdherentEntity> adherent = Database.getInstance().getAdherentByEmail(email);
 
-        if (adherent != null && PasswordEncrypter.checkPassword(password, adherent.getPassword())) {
+//        System.out.println("\n\nRESULT:" + adherent.isPresent());
+//        if(adherent.isPresent()) {
+//            System.out.println("RESULT:" + PasswordEncrypter.hashPassword(password));
+//            System.out.println("RESULT:" + adherent.get().getPassword());
+//            System.out.println("RESULT:" + PasswordEncrypter.checkPassword(password, adherent.get().getPassword()));
+//        }
+
+        if (adherent.isPresent() && PasswordEncrypter.checkPassword(password, adherent.get().getPassword())) {
             HttpSession session = req.getSession();
-            session.setAttribute("adherent", adherent);
-            RequestDispatcher dispatcher = req.getRequestDispatcher("Menu.jsp");
+            session.setAttribute("adherent", adherent.get());
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/Menu.jsp");
             dispatcher.forward(req, resp);
         } else {
-            resp.sendRedirect("Login.html");
+            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/Login.jsp");
+            dispatcher.forward(req, resp);
         }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
     }
 }

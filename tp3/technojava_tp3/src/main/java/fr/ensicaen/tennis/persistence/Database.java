@@ -1,19 +1,18 @@
 package fr.ensicaen.tennis.persistence;
 
-//import fr.ensicaen.tennis.exception.AuthenticationException;
-//import fr.ensicaen.tennis.utils.PwdUtils;
 import fr.ensicaen.tennis.security.XSSRequestWrapper;
 import fr.ensicaen.tennis.ApplicationProperties;
 import fr.ensicaen.tennis.util.Logger;
+import fr.ensicaen.tennis.util.TournoiInscriptionDTO;
 import jakarta.persistence.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * @author JRD
@@ -106,15 +105,40 @@ public class Database {
 		return query.getResultList();
 	}
 
-	public AdherentEntity getAdherentByEmail(String email) {
-		final Query query = entityManager.createQuery("from AdherentEntity t where t.email like :email");
+	public Optional<AdherentEntity> getAdherentByEmail(String email) {
+		final TypedQuery<AdherentEntity> query = entityManager.createQuery("from AdherentEntity t where t.email like :email", AdherentEntity.class);
 		query.setParameter("email", email);
-		return (AdherentEntity)query.getSingleResult();
+		return  query.getResultList().stream().findFirst();
 	}
+
 	// ********** TOURNOI **********
 	public List<TournoiEntity> listTournois() {
 		final TypedQuery<TournoiEntity> query = entityManager.createQuery("from TournoiEntity t", TournoiEntity.class);
 		return query.getResultList();
+	}
+
+	public List<TournoiInscriptionDTO> getTournoiInfosByAdherent(int numeroAdherent) {
+		AdherentEntity adherent = entityManager.find(AdherentEntity.class, numeroAdherent);
+
+		TypedQuery<InscriptionEntity> query = entityManager.createQuery(
+				"from InscriptionEntity i where i.numeroAdherent = :numeroAdherent", InscriptionEntity.class);
+		query.setParameter("numeroAdherent", adherent.getNumeroAdherent());
+		List<InscriptionEntity> inscriptions = query.getResultList();
+
+		List<TournoiInscriptionDTO> dtos = inscriptions.stream()
+				.map(inscription -> {
+					TournoiEntity tournoi = entityManager.find(TournoiEntity.class, inscription.getCodeTournoi());
+					TournoiInscriptionDTO dto = new TournoiInscriptionDTO();
+					dto.codeTournoi = tournoi.getCodeTournoi();
+					dto.nomTournoi = tournoi.getNom();
+					dto.lieuTournoi = tournoi.getLieu();
+					dto.dateTournoi = new SimpleDateFormat("dd/MM/yy").format(tournoi.getDate());
+					dto.dateInscription = new SimpleDateFormat("dd/MM/yy").format(inscription.getDateInscription());
+					return dto;
+				})
+				.collect(Collectors.toList());
+
+		return dtos;
 	}
 
 

@@ -7,7 +7,7 @@ import java.util.Date;
 @Entity
 @Table(name = "adherent", schema = "PUBLIC", catalog = "tennis")
 public class AdherentEntity {
-    private int numero_adherent;
+    private int numeroAdherent;
     private String nom;
     private String prenom;
     private String adresse;
@@ -16,11 +16,11 @@ public class AdherentEntity {
     private String password;
 
     @Id
-    @Column(name = "numero_adherent")
+    @Column(name = "numeroAdherent")
     // AUTO si Hibernate génère l'id, IDENTITY si c'est la BDD qui prend en charge la génération
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int getNumeroAdherent() { return numero_adherent; }
-    public void setNumeroAdherent(int id) { this.numero_adherent = id; }
+    public int getNumeroAdherent() { return numeroAdherent; }
+    public void setNumeroAdherent(int id) { this.numeroAdherent = id; }
 
     @Basic
     @Column(name="nom", length = 255)

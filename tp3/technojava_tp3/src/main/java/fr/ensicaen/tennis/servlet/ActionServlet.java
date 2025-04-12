@@ -17,14 +17,14 @@ public class ActionServlet extends HttpServlet {
 		HttpSession session = request.getSession(false);
 		String code = request.getParameter("code");
 
-		boolean sessionStillValid = (session != null && session.getAttribute("/service/adherent") != null);
+		boolean sessionStillValid = (session != null && session.getAttribute("adherent") != null);
 
 		if (!sessionStillValid) {
 			if ("L".equals(code)) {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("/service/login");
 				dispatcher.forward(request, response);
 			} else {
-				response.sendRedirect("Login.html");
+				response.sendRedirect("/Login.jsp");
 			}
 			return;
 		}
@@ -37,7 +37,7 @@ public class ActionServlet extends HttpServlet {
 				request.getRequestDispatcher("/service/inscription").forward(request, response);
 				break;
 			default:
-				request.getRequestDispatcher("Menu.jsp").forward(request, response);
+				request.getRequestDispatcher("/Menu.jsp").forward(request, response);
 		}
 	}
 

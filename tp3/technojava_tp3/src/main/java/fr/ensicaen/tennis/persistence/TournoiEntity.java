@@ -4,34 +4,36 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 
+@Entity
+@Table(name="tournoi", schema = "PUBLIC", catalog = "tennis")
 public class TournoiEntity {
-    private long code_tournoi;
+    private int codeTournoi;
     private String nom;
     private String lieu;
     private Date date;
 
     @Id
-    @Column(name = "code_tournoi")
+    @Column(name = "codeTournoi")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public long getCodeTournoi() {
-        return code_tournoi;
+    public int getCodeTournoi() {
+        return codeTournoi;
     }
-    public void setCodeTournoi(long code_tournoi) {
-        this.code_tournoi = code_tournoi;
+    public void setCodeTournoi(int codeTournoi) {
+        this.codeTournoi = codeTournoi;
     }
 
     @Basic
     @Column(name="nom", length = 255)
-    public String geNom() {return nom;}
+    public String getNom() {return nom;}
     public void setNom(String nom) {this.nom = nom;}
 
     @Basic
     @Column(name="lieu", length = 255)
-    public String geLieu() {return lieu;}
+    public String getLieu() {return lieu;}
     public void setLieu(String lieu) {this.lieu = lieu;}
 
     @Basic
     @Column(name = "date")
-    public Date geDate() {return date;}
+    public Date getDate() {return date;}
     public void setDate(Date date) {this.date = date;}
 }

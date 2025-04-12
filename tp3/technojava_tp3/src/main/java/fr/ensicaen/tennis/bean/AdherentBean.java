@@ -4,6 +4,7 @@ import fr.ensicaen.tennis.persistence.AdherentEntity;
 import fr.ensicaen.tennis.persistence.Database;
 import fr.ensicaen.tennis.persistence.TodoEntity;
 import fr.ensicaen.tennis.util.Logger;
+import fr.ensicaen.tennis.util.TournoiInscriptionDTO;
 
 import java.util.List;
 
@@ -17,5 +18,8 @@ public class AdherentBean {
 
     public List<AdherentEntity> getTodoList() {
         return database.listAdherents();
+    }
+    public List<TournoiInscriptionDTO> getTournoiInfosByAdherent(int numeroAdherent) {
+        return database.getTournoiInfosByAdherent(numeroAdherent);
     }
 }
