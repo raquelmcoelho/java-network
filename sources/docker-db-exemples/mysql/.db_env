@@ -1,4 +1,0 @@
-MYSQL_ROOT_PASSWORD=root_ultrasecured_password_for_the_win
-MYSQL_DATABASE=library
-MYSQL_USER=library
-MYSQL_PASSWORD=secured_user_password_because_you_must

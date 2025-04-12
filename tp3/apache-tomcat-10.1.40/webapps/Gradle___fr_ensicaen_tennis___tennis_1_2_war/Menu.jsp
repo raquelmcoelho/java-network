@@ -5,7 +5,6 @@
 </jsp:include>
 
 <%
-    final String path = request.getContextPath();
     AdherentEntity adherent = (AdherentEntity) session.getAttribute("adherent");
 %>
 
@@ -17,11 +16,11 @@
 
     <div class="row justify-content-center">
         <div class="col-md-5 mb-4">
-            <div class="card shadow-sm border-success">
+            <div class="card shadow-sm border-primary">
                 <div class="card-body text-center">
                     <h5 class="card-title">Consulter votre dossier</h5>
                     <p class="card-text">Accédez à toutes les informations concernant votre adhésion.</p>
-                    <a href="<%=path%>/action?code=A" class="btn btn-primary">Voir mon dossier</a>
+                    <a href="action?code=A" class="btn btn-primary">Voir mon dossier</a>
                 </div>
             </div>
         </div>
@@ -31,7 +30,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title">Inscription à un tournoi</h5>
                     <p class="card-text">Rejoignez un tournoi et montrez vos compétences !</p>
-                    <a href="<%=path%>/action?code=I" class="btn btn-success">S'inscrire</a>
+                    <a href="action?code=I" class="btn btn-success">S'inscrire</a>
                 </div>
             </div>
         </div>

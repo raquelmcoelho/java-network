@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
+             version="3.1">
+    <persistence-unit name="tennis" transaction-type="RESOURCE_LOCAL" >
+        <description>This unit manage Tennis Club data.
+            Member (Adherent), tournament (Tournoi) and registration (Inscription).
+        </description>
+        <class>fr.ensicaen.tennis.persistence.TournoiEntity</class>
+        <class>fr.ensicaen.tennis.persistence.AdherentEntity</class>
+        <class>fr.ensicaen.tennis.persistence.InscriptionEntity</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:file:./webapp/WEB-INF/db/tennis;LOCK_MODE=0;DB_CLOSE_DELAY=0;" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="jakarta.persistence.jdbc.user" value="tennis" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="jakarta.persistence.lock.timeout" value="200"/>
+            <property name="show-sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>

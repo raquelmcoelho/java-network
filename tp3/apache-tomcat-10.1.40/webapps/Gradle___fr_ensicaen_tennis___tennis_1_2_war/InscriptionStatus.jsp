@@ -5,8 +5,8 @@
     <jsp:param name="credentials" value="false"/>
 </jsp:include>
 
+
 <%
-    final String path = request.getContextPath();
     String status = (String) request.getAttribute("status");
     boolean success = (boolean) request.getAttribute("success");
     TournoiEntity tournoi = (TournoiEntity) request.getAttribute("tournoi");
@@ -36,7 +36,7 @@
         </div>
     <%}%>
 
-    <a href="<%=path%>/service/inscription" class="btn btn-primary mt-3">Retour à la liste des tournois</a>
+    <a href="../service/inscription" class="btn btn-primary mt-3">Retour à la liste des tournois</a>
 </div>
 
 <jsp:include page="WEB-INF/includes/footer.jsp" />

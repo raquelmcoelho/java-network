@@ -3,16 +3,12 @@
 	<jsp:param name="credentials" value="false"/>
 </jsp:include>
 
-<%
-	final String path = request.getContextPath();
-%>
-
 <div class="container-fluid m-3">
 	<div class="row border my-title">
 		<h1>Login</h1>
 	</div>
 
-	<form class="mt-4" action="<%=path%>/action?code=L" method="post">
+	<form class="mt-4" action="action?code=L" method="post">
 		<div class="mb-3">
 			<label for="email" class="form-label">Email</label>
 			<input type="email" class="form-control" id="email" name="email" required>
@@ -23,6 +19,10 @@
 		</div>
 		<button type="submit" class="btn btn-primary">Connexion</button>
 	</form>
+
+	<div class="row mt-3">
+		<a href="console/">Console H2 database</a>
+	</div>
 </div>
 
 <jsp:include page="WEB-INF/includes/footer.jsp"/>

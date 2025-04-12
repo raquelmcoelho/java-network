@@ -9,9 +9,9 @@
 <jsp:useBean id="tournoiBean" class="fr.ensicaen.tennis.bean.TournoiBean" scope="request">
     <jsp:useBean id="inscriptionBean" class="fr.ensicaen.tennis.bean.InscriptionBean" scope="request">
     <%
-        final String path = request.getContextPath();
         final List<TournoiEntity> tournois = tournoiBean.getTournoiList();
     %>
+
 
     <div class="container mt-5">
         <h1>Liste des Tournois</h1>
@@ -35,14 +35,15 @@
                     <td>
 
                     <%
-                    int codeTournoi = tournoi.getCodeTournoi();
-                    int numeroAdherent = (int) request.getAttribute("numeroAdherent");
-                    if(inscriptionBean.isAlreadyDone(codeTournoi, numeroAdherent)) {
+                        int codeTournoi = tournoi.getCodeTournoi();
+                        int numeroAdherent = (int) request.getAttribute("numeroAdherent");
+                        if(inscriptionBean.isAlreadyDone(codeTournoi, numeroAdherent)) {
                     %>
-                        <a class="btn btn-secondary disabled" tabindex="-1" aria-disabled="true">Inscription</a>
+                        <a href="" disabled="true" class="btn btn-primary">Inscription</a>
                     <% } else { %>
-                        <a href="<%=path%>/service/inscription?tournoi=<%=tournoi.getCodeTournoi()%>" class="btn btn-primary">Inscription</a>
+                        <a href="service/inscription?tournoi=<%=tournoi.getCodeTournoi()%>" class="btn btn-primary">Inscription</a>
                     <% } %>
+                    </td>
                 </tr>
                 <%}%>
             </tbody>

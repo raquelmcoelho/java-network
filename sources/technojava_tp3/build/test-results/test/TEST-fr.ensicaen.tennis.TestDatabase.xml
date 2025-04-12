@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.ensicaen.tennis.TestDatabase" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-10T20:56:12.429Z" hostname="MSI-PULSE-B13V" time="0.012">
-  <properties/>
-  <testcase name="insert_todo()" classname="fr.ensicaen.tennis.TestDatabase" time="0.008"/>
-  <testcase name="database_engine_ok()" classname="fr.ensicaen.tennis.TestDatabase" time="0.001"/>
-  <testcase name="get_todo()" classname="fr.ensicaen.tennis.TestDatabase" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
