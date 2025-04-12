@@ -1,4 +1,11 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-image: url("../media/background.jpg");
     background-repeat: repeat;
@@ -114,7 +121,6 @@ textarea:disabled {
     opacity: 0.7;
     cursor: not-allowed;
 }
-
 
 ::-webkit-scrollbar {
     width: 8px;

@@ -32,12 +32,18 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+		<div class="collapse navbar-collapse justify-content-end " id="navbarContent">
 			<ul class="navbar-nav mb-2 mb-lg-0">
 				<% if (session != null && session.getAttribute("adherent") != null) { %>
-				<li class="nav-item">
+				<li class="nav-item m-3">
 					<form action="<%=path%>/Menu.jsp" method="post" class="d-flex align-items-center">
 						<button type="submit" class="btn btn-outline-primary">Retour au menu</button>
+					</form>
+				</li>
+
+				<li class="nav-item m-3">
+					<form action="<%=path%>/logout" method="post" class="d-flex align-items-center">
+						<button type="submit" class="btn btn-outline-primary">Quitter</button>
 					</form>
 				</li>
 				<% } %>

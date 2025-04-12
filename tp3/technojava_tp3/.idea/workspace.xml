@@ -5,188 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ddac6a8-a23e-4485-bfcf-4d29361bddb3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/8.13/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/ApplicationProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/HashPasswordExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/ServletContextManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/bean/AdherentBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/persistence/AdherentEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/persistence/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/persistence/InscriptionEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/persistence/TodoEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/persistence/TournoiEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/security/XSSRequestWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/ActionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/AdherentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/InscriptionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/servlet/TodoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/util/FormatNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/util/Logger$LogLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/main/fr/ensicaen/tennis/util/Logger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/classes/java/test/fr/ensicaen/tennis/TestDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/AddTodo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/Adherent.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/ListTodo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/Login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/Menu.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/META-INF/h2-persistence.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/META-INF/sql/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/META-INF/sql/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/META-INF/tennis.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/ApplicationProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/HashPasswordExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/ServletContextManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/bean/AdherentBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/persistence/AdherentEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/persistence/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/persistence/InscriptionEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/persistence/TodoEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/persistence/TournoiEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/security/XSSRequestWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/ActionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/AdherentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/InscriptionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/servlet/TodoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/util/FormatNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/util/Logger$LogLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/classes/fr/ensicaen/tennis/util/Logger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/db/tennis.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/includes/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/includes/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/angus-activation-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/antlr4-runtime-4.13.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/byte-buddy-1.14.18.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/h2-2.3.232.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/hibernate-core-7.0.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/hibernate-models-0.8.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/istack-commons-runtime-4.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jakarta.activation-api-2.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jakarta.inject-api-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jakarta.persistence-api-3.2.0-M2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jakarta.transaction-api-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jakarta.xml.bind-api-4.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jandex-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jaxb-core-4.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jaxb-runtime-4.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jbcrypt-0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/jboss-logging-3.5.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/lib/txw2-4.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/css/bootmodif.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/css/myapp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/js/color-modes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/media/TennisGrassCourt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/media/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/exploded/tennis-1.2.war/media/tennis_ball.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/libs/tennis-1.2.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/problems/problems-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/tests/test/classes/fr.ensicaen.tennis.TestDatabase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/reports/tests/test/packages/fr.ensicaen.tennis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/main/META-INF/h2-persistence.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/main/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/main/META-INF/sql/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/main/META-INF/sql/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/main/META-INF/tennis.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/test/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/resources/test/META-INF/tennis.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/test-results/test/TEST-fr.ensicaen.tennis.TestDatabase.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/compileTransaction/stash-dir/AdherentBean.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/compileTransaction/stash-dir/Database.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/compileTransaction/stash-dir/InscriptionEntity.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/compileTransaction/stash-dir/LoginServlet.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/compileTransaction/stash-dir/ServletContextManager.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/compileTransaction/stash-dir/TodoServlet.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileTestJava/compileTransaction/stash-dir/TestDatabase.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/ApplicationProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/HashPasswordExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/ServletContextManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/bean/AdherentBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/persistence/AdherentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/persistence/Database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/persistence/InscriptionEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/persistence/TodoEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/persistence/TournoiEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/security/XSSRequestWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/servlet/ActionServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/servlet/AdherentServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/servlet/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/servlet/TodoServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/util/FormatNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/java/fr/ensicaen/tennis/util/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/resources/META-INF/h2-persistence.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/resources/META-INF/sql/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/resources/META-INF/sql/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/resources/META-INF/tennis.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/AddTodo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/Adherent.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/ListTodo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/Login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/Menu.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/WEB-INF/db/tennis.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/WEB-INF/db/tennis.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/WEB-INF/includes/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/css/bootmodif.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/css/myapp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/js/color-modes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/media/TennisGrassCourt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/media/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/main/webapp/media/tennis_ball.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/test/java/fr/ensicaen/tennis/TestDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/test/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sources/technojava_tp3/src/test/resources/META-INF/tennis.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionStatus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionStatus.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/InscriptionTournois.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/image0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/myapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/myapp.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,8 +60,8 @@
         <option value="Jsp File" />
         <option value="HTML File" />
         <option value="Servlet" />
-        <option value="raquel-servlet" />
         <option value="Class" />
+        <option value="raquel-servlet" />
       </list>
     </option>
   </component>
@@ -452,7 +278,7 @@
       <updated>1744309145033</updated>
       <workItem from="1744309146076" duration="14467000" />
       <workItem from="1744363961608" duration="2437000" />
-      <workItem from="1744417434000" duration="24837000" />
+      <workItem from="1744417434000" duration="25879000" />
     </task>
     <servers />
   </component>
