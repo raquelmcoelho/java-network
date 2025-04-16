@@ -26,7 +26,6 @@ public class InscriptionServlet extends HttpServlet {
             return;
         }
 
-        // Cas: Enregistrement de l'inscription
         int codeTournoi = Integer.parseInt(codeTournoiStr);
         boolean success = database.registerAdherentTo(codeTournoi, numeroAdherent);
 

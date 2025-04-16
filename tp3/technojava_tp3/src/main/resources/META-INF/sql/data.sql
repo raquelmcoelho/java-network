@@ -1,9 +1,3 @@
--- Insertion des données
-insert into TODO (ID_TODO, DESCRIPTION) values (1, 'Faire le TP avec sa tête et ses doigts.');
-insert into TODO (ID_TODO, DESCRIPTION) values (2, 'Comprendre (ou presque) ce qui est fait.');
-insert into TODO (ID_TODO, DESCRIPTION) values (3, 'Apprécier le résultat.');
-
-
 INSERT INTO adherent VALUES
 // password123 -> $2a$10$6QP1Gs5tbUT3KciBpwA9L.jQGYm0G/AUt688605DUpHg2oYSVq/se
 (1, 'Dupont', 'Jean', '12 Rue de Paris, Lyon', '0612345678', 'jean.dupont@email.com', '$2a$10$6QP1Gs5tbUT3KciBpwA9L.jQGYm0G/AUt688605DUpHg2oYSVq/se'),
@@ -25,7 +19,6 @@ INSERT INTO adherent VALUES
 (9, 'Simon', 'Thomas', '55 Rue Saint-Michel, Nantes', '0690123456', 'thomas.simon@email.com', '$2a$10$UngONDvOc26blI9dDQx9N.tcWu/JdP0igsPgM9VW4rY7gAdRaEqSq'),
 // camillepass -> $2a$10$j2jAqnK0ZVxosvhiqeD.o./yrlTwP9Q06l3zfN5zygW0QxstU3N6S
 (10, 'Laurent', 'Camille', '19 Rue du Faubourg, Montpellier', '0601234567', 'camille.laurent@email.com', '$2a$10$j2jAqnK0ZVxosvhiqeD.o./yrlTwP9Q06l3zfN5zygW0QxstU3N6S');
-
 
 INSERT INTO tournoi VALUES
 (101, 'Open de Paris', '2025-05-10', 'Paris'),

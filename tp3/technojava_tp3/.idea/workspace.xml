@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ddac6a8-a23e-4485-bfcf-4d29361bddb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/image0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/myapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/myapp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/persistence/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ensicaen/tennis/servlet/InscriptionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/sql/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/sql/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/sql/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/db/tennis.trace.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +276,7 @@
       <updated>1744309145033</updated>
       <workItem from="1744309146076" duration="14467000" />
       <workItem from="1744363961608" duration="2437000" />
-      <workItem from="1744417434000" duration="25879000" />
+      <workItem from="1744417434000" duration="26657000" />
     </task>
     <servers />
   </component>
